@@ -26,13 +26,9 @@ def performBirthdayAttack():
         s = generateRandomString()
         hashValue = calculateHashValue(s)[0:10]
         if hashValue in hashDictionary:
-            return ("String 1: " + s, "String 2: " + hashDictionary[hashValue], "First 10 of common hash value: " + hashValue, "Number of calls to SHA1: " + str(count))
+            print("First 10 of the common hash value: " + hashValue)
+            return (s, hashDictionary[hashValue], str(count))
         else:
             hashDictionary[hashValue] = s
-
-# Run the code!
-# Two sets of examples that work:
-# ('String 1: 4A3Y00XXKZ', 'String 2: X5BZHDNWFJ', 'First 10 of common hash value: 4819399339', 'Number of calls to SHA1: 1007791')
-# ('String 1: KGRBLVRUBA', 'String 2: TBDH5461DK', 'First 10 of common hash value: 7fcdc4d357', 'Number of calls to SHA1: 363832')
 
 print(performBirthdayAttack())
