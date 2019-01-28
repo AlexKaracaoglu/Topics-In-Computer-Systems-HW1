@@ -2,7 +2,7 @@
     Topics in Computer Systems
     HW1 - Due Tuesday, January 29
     Problem 2: Birthday attack on a 40-bit hash
-    Group 11 - Maithri Harve, Alex Karacaoglu, Helina Belete, Kevin Tso, Kate Kitsakos
+    Group 9 - Maithri Harve, Alex Karacaoglu, Helina Belete, Kevin Tso, Kate Kitsakos
 """
 
 import random
